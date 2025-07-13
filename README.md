@@ -1,6 +1,8 @@
 <div align="center">
 
-Tuning-Free Long Video Generation via Global-Local Collaborative Diffusion
+**Tuning-Free Long Video Generation via Global-Local Collaborative Diffusion**
+
+
 
 Yongjia Ma, Junlin Chen, Donglin Di, Qi Xie, Lei Fan*, Wei Chen, Na Zhao, Xun Yang
 
