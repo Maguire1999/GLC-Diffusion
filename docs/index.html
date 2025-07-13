@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <title>GLCD: Tuning-Free Long Video Generation via Global-Local Collaborative Diffusion</title>
+  <style>
+        .centered-text {
+            text-align: center;
+        }
+  </style>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+  
+<!--D3C5FF-->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span
+                style="color: #948FFF; font-weight: bolder;">GLCD</span>: Tuning-Free Long Video Generation via Global-Local Collaborative Diffusion</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Jiahui Yang</a><sup>1,2</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=L8tcNioAAAAJ&hl=zh-CN&oi=ao">Donglin Di</a><sup>1,2,3</sup>
+            </span>
+
+            <span class="author-block">
+              <a href="https://mabaorui.github.io/">Baorui Ma</a><sup>3</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ro8lzsUAAAAJ&hl=zh-CN&oi=ao">Xun Yang*</a><sup>4</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=BszRJxkAAAAJ">Yongjia Ma</a><sup>2</sup>,
+            </span>
+            
+              <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=3-9aEOQAAAAJ&hl=zh-CN&oi=ao">Wenzhang Sun</a><sup>2</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="">Wei Chen</a><sup>2</sup>,
+            </span>
+
+<!--            <span class="author-block">-->
+<!--              <a href="">Xiaofeng Guo</a><sup>2</sup>,-->
+<!--            </span>-->
+
+            <span class="author-block">
+              <a href="">Jianxun Cui*</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=ECKq3aUAAAAJ">Zhou Xue</a><sup>5</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=rHagaaIAAAAJ&hl=en">Meng Wang</a><sup>5</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://www.liuyebin.com/">Yebin Liu</a><sup>6</sup>
+            </span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Harbin Institute of Technology.</span>
+            <span class="author-block"><sup>2</sup>Space AI, Li Auto Inc.</span>
+            <span class="author-block"><sup>3</sup>School of Software, Tsinghua University.</span>
+            <span class="author-block"><sup>4</sup>University of Science and Technology of China.</span>
+            <span class="author-block"><sup>5</sup>Hefei University of Technology, China.</span>
+            <span class="author-block"><sup>6</sup>Department of Automation, Tsinghua University.</span>
+          </div>
+
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. 
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2410.21299"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2410.21299"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://github.com/yjhboy/GLCD"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                  </span>-->
+<!--                  <span>Code</span>-->
+<!--                  </a>-->
+<!--              </span>-->
+              
+            <!-- </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Creating high-fidelity, coherent long videos is a sought-after aspiration. While recent video diffusion models have shown promising potential, they still grapple  with spatiotemporal inconsistencies and high computational resource demands. We propose GLC-Diffusion, a tuning-free method for long video generation. It models the long video denoising process by establishing denoising trajectories through Global-Local Collaborative Denoising to ensure overall content consistency and temporal coherence between frames. Additionally, we introduce a Noise Reinitialization strategy which combines local noise shuffling with frequency fusion to improve global content consistency and visual diversity. Further, we propose a Video Motion Consistency Refinement (VMCR) module that computes the gradient of pixel-wise and frequency-wise losses to enhance visual consistency and temporal smoothness. 
+            Extensive experiments, including quantitative and qualitative evaluations on videos of varying lengths (<b>e.g.</b>, 3× and 6× longer), demonstrate that our method effectively integrates with existing video diffusion models, producing coherent, high-fidelity long videos superior to previous approaches.
+          </p>
+        </div>
+        <img src="./static/images/fig2_method.svg">
+        <div class="content has-text-justified">
+        <p>
+          Figure 1. <b>GLCD</b> can achieve customized 3D contents from text prompt and reference image, specifically on text-to-3D task and 3D stylized task.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 centered-text">Customized Results of GLCD</h2>
+    <div class="hero-body has-text-centered">
+      <video id="teaser" autoplay controls loop playsinline style="display: block; margin: 0 auto;" height="100%">
+        <source src="./static/videos/fig1.mp4" type="video/mp4" />
+      </video>
+      <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        <b>GLCD</b> is a novel customized generation framework that 
+        leverages text descriptions and single image guidance to produce 
+        high-quality and intricately stylized 3D assets.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 centered-text">Comparative Experiments</h2>
+    <div class="hero-body has-text-centered">
+      <video id="teaser" autoplay controls loop playsinline style="display: block; margin: 0 auto;" height="100%">
+        <source src="./static/videos/fig4_video_length_3.mp4" type="video/mp4" />
+      </video>
+      <video id="teaser" autoplay controls loop playsinline style="display: block; margin: 0 auto;" height="100%">
+        <source src="./static/videos/fig4_video_length_6.mp4" type="video/mp4" />
+      </video>
+      <!-- <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        <b>GLCD</b> is a novel customized generation framework that 
+        leverages text descriptions and single image guidance to produce 
+        high-quality and intricately stylized 3D assets.
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 centered-text">Ablation Experiments</h2>
+    <div class="hero-body has-text-centered">
+      <video id="teaser" autoplay controls loop playsinline style="display: block; margin: 0 auto;" height="100%">
+        <source src="./static/videos/fig5_ablation.mp4" type="video/mp4" />
+      </video>
+      <!-- <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        <b>GLCD</b> is a novel customized generation framework that 
+        leverages text descriptions and single image guidance to produce 
+        high-quality and intricately stylized 3D assets.
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 centered-text">Multiprompt Result of GLCD</h2>
+    <div class="hero-body has-text-centered">
+      <video id="teaser" autoplay controls loop playsinline style="display: block; margin: 0 auto;" height="100%">
+        <source src="./static/videos/fig6_multiprompt.mp4" type="video/mp4" />
+      </video>
+      <!-- <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        <b>GLCD</b> is a novel customized generation framework that 
+        leverages text descriptions and single image guidance to produce 
+        high-quality and intricately stylized 3D assets.
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>This website is built using the source code from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, and we sincerely appreciate their template.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
