@@ -1,14 +1,19 @@
 <div align="center">
 
-# Tuning-Free Long Video Generation via Global-Local Collaborative Diffusion
+Tuning-Free Long Video Generation via Global-Local Collaborative Diffusion
+
 Yongjia Ma, Junlin Chen, Donglin Di, Qi Xie, Lei Fan*, Wei Chen, Na Zhao, Xun Yang
+
+
 <!-- <p align="center">
 <a href=""><img src="https://img.shields.io/badge/Arxiv-2403.09236-B31B1B.svg"></a>
 </p> -->
 </div> 
 <p align="center">
-    <img src="contents/fig1.png">
+    <img src="docs/static/images/GLCD_Project.png">
 </p>
+
+
 
 **Abstract:**
 
